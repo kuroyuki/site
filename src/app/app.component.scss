@@ -1,0 +1,15 @@
+app-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+}   
+app-footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.app{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
