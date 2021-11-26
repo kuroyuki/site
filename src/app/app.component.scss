@@ -1,15 +1,10 @@
-app-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-}   
-app-footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
+app-top-menu, app-footer{
+    width: 100%;
+    position: fixed;
 }
-.app{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+app-top-menu{
+    top: 0;
+}
+app-footer{
+    bottom: 0;
 }
