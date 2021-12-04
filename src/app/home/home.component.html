@@ -1,5 +1,9 @@
 <mat-grid-list cols="3"  rowHeight="1:1">
-    <mat-grid-tile colspan="2">1</mat-grid-tile>
+    <mat-grid-tile colspan="2">
+      <div class="engine-wrapper">
+        <canvas #rendererCanvas id="renderCanvas"></canvas>
+      </div>
+    </mat-grid-tile>
     <mat-grid-tile rowspan="2" [style.background]='"lightgreen"'>2</mat-grid-tile>
     <mat-grid-tile colspan="2" [style.background]='"pink"'>3</mat-grid-tile>
   </mat-grid-list>
