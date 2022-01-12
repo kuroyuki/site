@@ -8,6 +8,8 @@ import { TopMenuModule } from './top-menu/top-menu.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { HomeComponent } from './home/home.component';
+import { NgxMatomoTrackerModule } from '@ngx-matomo/tracker';
+import { NgxMatomoRouterModule } from '@ngx-matomo/router';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     TopMenuModule,
     BrowserAnimationsModule,
-    MatGridListModule
+    MatGridListModule,
+    NgxMatomoTrackerModule.forRoot({ trackerUrl: 'https://yurizhukov.matomo.cloud', siteId: '1' }),
+    NgxMatomoRouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
