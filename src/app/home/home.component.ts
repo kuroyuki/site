@@ -11,4 +11,7 @@ export class HomeComponent implements OnInit{
   ngOnInit(): void {
     this.tracker.trackEvent('componentNavigation', 'HomeComponent', "onInit", 1)
   }
+  onButtonClicked(){
+    this.tracker.trackEvent('buttonEvents', 'HomeButton', 'clicked', 1)
+  }
 }

@@ -10,6 +10,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { HomeComponent } from './home/home.component';
 import { NgxMatomoTrackerModule } from '@ngx-matomo/tracker';
 import { NgxMatomoRouterModule } from '@ngx-matomo/router';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,7 @@ import { NgxMatomoRouterModule } from '@ngx-matomo/router';
     AppRoutingModule,
     TopMenuModule,
     BrowserAnimationsModule,
-    MatGridListModule,
+    MatGridListModule, MatButtonModule,
     NgxMatomoTrackerModule.forRoot({ trackerUrl: 'https://yurizhukov.matomo.cloud', siteId: '1' }),
     NgxMatomoRouterModule
   ],
